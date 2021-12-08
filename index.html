@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Chance of admission prediction </h1>
+    <form action="{{ url_for("gfg")}}" method="post">
+<label for="GRE_Scores">GRE Score:</label>
+<input type="text" id="GRE_Scores" name="GRE_Scores" placeholder="GRE_Scores">
+<label for="TOEFL_Scores">TOEFL Scores:</label>
+<input type="text" id="TOEFL_Scores" name="TOEFL_Scores" placeholder="TOEFL_Scores">
+
+
+      <label for="SOP"> SOP:</label>
+<input type="text" id="SOP" name="SOP" placeholder="SOP">
+    <label for="LOR"> LOR:</label>
+<input type="text" id="LOR" name="LOR" placeholder="LOR">
+    <label for="CGPA"> CGPA:</label>
+<input type="text" id="CGPA" name="CGPA" placeholder="CGPA">
+    <label for="University_Rating">Past Owners:</label>
+<input type="text" id="University_Rating" name="University_Rating" placeholder="University_Rating">
+
+
+ <label for="Research_experiance">Research experiance:</label>
+  <select id="Research_experiance" name="Research_experiance">
+    <option value="yes">yes</option>
+    <option value="no">no </option>
+  </select>
+
+
+
+<button type="submit">Predict</button>
+</body>
+</html>
